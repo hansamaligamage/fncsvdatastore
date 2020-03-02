@@ -1,8 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Configuration;
+﻿using System;
 using Microsoft.Azure.Cosmos.Table;
 using System.Threading.Tasks;
 
