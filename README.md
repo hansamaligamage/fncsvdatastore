@@ -4,7 +4,7 @@ This is a http trigger function written in C# - .NET Core 3.1. It processed a cs
 
 ## Technology stack  
 * .NET Core 3.1 on Visual Studio 2019
-* Azure Cosmos DB table API
+* Azure functions v3 and Azure Cosmos DB table API
 
 ## Code snippets
 ### Retrieve the database storage account
