@@ -48,5 +48,26 @@ public static async Task<CloudTable> CreateTableAsync(string tableName)
 {
     CloudTable table;
     string storageConnectionString = LoadConnectionDetails();
+    CloudStorageAccount storageAccount = RetieveStorageAccount(storageConnectionString);
+    CloudTableClient tableClient = storageAccount.CreateCloudTableClient(new TableClientConfiguration());
+    Console.WriteLine("Table client is created");
+    try
+    {
+        table = tableClient.GetTableReference(tableName);
+        if (await table.CreateIfNotExistsAsync())
+        {
+            Console.WriteLine("Table is created - {0}", tableName);
+        }
+        else
+        {
+            Console.WriteLine("Table {0} already exists", tableName);
+        }
+    }
+    catch (Exception ex)
+    {
+        throw ex;
+    }
+    Console.WriteLine();
+    return table;
 }
  `
