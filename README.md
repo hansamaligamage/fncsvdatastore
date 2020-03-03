@@ -37,10 +37,11 @@ public static CloudStorageAccount RetieveStorageAccount(string storageConnection
 ### Create a table in Cosmos DB
 `
    public static string LoadConnectionDetails()
-        {
-            return Environment.GetEnvironmentVariable("StorageConnectionString");
-        }
-        
+   {
+        return Environment.GetEnvironmentVariable("StorageConnectionString");
+    }
+   `
+    `    
          public static async Task<CloudTable> CreateTableAsync(string tableName)
         {
             CloudTable table;
