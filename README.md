@@ -115,7 +115,8 @@ public static async Task<CloudTable> CreateTableAsync(string tableName)
                 Session session = result.Result as Session;
                 if (session != null)
                 {
-                    Console.WriteLine("\t{0}\t{1}\t{2}\t{3}", session.PartitionKey, session.RowKey, session.Points, session.IsWeekend);
+                    Console.WriteLine("\t{0}\t{1}\t{2}\t{3}", session.PartitionKey, session.RowKey, 
+                        session.Points, session.IsWeekend);
                 }
 
                 if (result.RequestCharge.HasValue)
