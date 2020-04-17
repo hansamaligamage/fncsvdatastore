@@ -6,6 +6,10 @@ This is a http trigger function written in C# - .NET Core 3.1. It processes a cs
 * .NET Core 3.1 on Visual Studio 2019
 * Azure functions v3 and Azure Cosmos DB table API
 
+## How to run the solution
+ * You have to create a Cosmos DB account with Table API and go to the Keys section and get the connectionstring to connect to the database
+ * Open the solution file in Visual Studio and build the project
+
 ## Code snippets
 ### Retrieve the database storage account
 ```
