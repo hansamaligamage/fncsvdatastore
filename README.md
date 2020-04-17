@@ -1,4 +1,4 @@
-# Azure function to store csv data in Cosmos DB - Table API
+# Azure function (.NET) to store csv data in Cosmos DB - Table API
 
 This is a http trigger function written in C# - .NET Core 3.1. It processes a csv file and store the data on Cosmos DB on Table API
 
