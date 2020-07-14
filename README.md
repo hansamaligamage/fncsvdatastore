@@ -1,4 +1,4 @@
-# An HTTP trigger written in .NET Core to process a CSV file and store data into CosmosDB using Table API 
+# A HTTP trigger written in .NET Core to process a CSV file and store data into CosmosDB using Table API 
 
 This is a http trigger function written in C# - .NET Core 3.1. It processes a csv file and store the data on Cosmos DB on Table API
 
